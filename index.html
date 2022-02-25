@@ -3,25 +3,74 @@
 <head>
   <title>Evgeny Tomsen: CV</title>
   <meta charset="utf-8">
-  <link href="https://d31qtcb7c58z3n.cloudfront.net/res-min/themes/marxico.css" rel="stylesheet">
   <style type="text/css">
     body {
       font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, Song, sans-serif;
-      max-width: 600px;
-      margin: 0 auto;
+      color: #2c3f51;
+      width: 100%;
+      font-size: 12px;
     }
 
-    @media only screen and (min-width: 960px) {
-      body {
-        max-width: 900px;
-      }
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+      tab-size: 4;
+      text-align: start;
+      padding: 0 20px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+      margin: 1.2em 0 0.6em 0;
+      text-align: start;
+    }
+    
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.1;
+    }
+
+    h2 {
+      font-size: 1.8rem;
     }
 
     h3 {
+      font-size: 1.1rem;
       margin-top: 0;
       margin-block-start: 0;
     }
 
+    p {
+      line-height: 1.5;
+      margin: 0 0 1.1em;
+    }
+
+    @media only screen and (min-width: 960px) {
+      body {
+        font-size: 16px;
+      }
+
+      main {
+        max-width: 700px;
+      }
+      p {
+        line-height: 1.6;
+      }
+    }
+
+    a {
+      background: transparent;
+      color: #1980e6;
+      text-decoration: none;
+      -webkit-transition: background-color ease-in-out .15s, color ease-in-out .15s, border-color ease-in-out .15s;
+      transition: background-color ease-in-out .15s, color ease-in-out .15s, border-color ease-in-out .15s;
+    }
+
+    a:hover, a:focus {
+      color: #0f4d8a;
+      text-decoration: underline;
+    }
 
     header {
       margin-bottom: 1rem;
@@ -70,7 +119,7 @@
     }
 
     article:nth-child(even) {
-      border-left: 2px dashed;
+      border-left: 2px dashed #2c3f51;
       border-top-left-radius: 30px;
       border-bottom-left-radius: 30px;
       margin-right: 30px; 
@@ -78,7 +127,7 @@
     }
 
     article:nth-child(odd) {
-      border-right: 2px dashed;
+      border-right: 2px dashed #2c3f51;
       border-top-right-radius: 30px;
       border-bottom-right-radius: 30px;
       margin-left: 30px; 
@@ -148,7 +197,7 @@
   </style>
 </head>
 <body>
-  <div class='note-content'>
+  <main>
     <section aria-labelledby="evgeny-tomsen">
     <h1 id="evgeny-tomsen">Evgeny Tomsen</h1>
     <p>Привет / Éila / Griesti! I'm <strong>Evgeny Tomsen</strong> - Javascript developer 💻, father of Lev 🦁 and Südtirol mountains lover 🏔 . For job matters please write me an <a href="mailto:evgeny@tomsen.me" target="_blank">email</a>, otherwise feel free to chat with me via <a href="https://t.me/daubihe" target="_blank">telegram</a>. I'm fluent in English, Italian and Russian... Angular, React, Svelte, Ionic, Stencil, Node.js and some others.
@@ -276,56 +325,57 @@
       </header>
       <p>I've helped my friends from <a href="https://42matters.com" target="_blank">ETH spin-off 42matters</a>, to develop an analysis and visualization tool for their Appaware Android Application Market using the <strong>MongoDB</strong> aggregations and some HTML/CSS/JS. Main task was to predict better application release/update time slot, suggest the price range for different market segments.</p>
     </article>
-  </section>
-  <hr>
-  <section id="education" aria-labelledby="education-label">
-    <h2 id="education-label">Education</h2>
-    <article id="unibz" aria-labelledby="unibz-label">
-      <h3 id="unibz-label">PhD in Software Engineering (suspended)</h3>
-      <header>
-        <strong>Free University of Bolzano-Bozen, Italy</strong> <br>
-        January 2012 - January 2013 * ~1 year (Bolzano-Bozen, Italy)<br>
-      </header>
-      <p>PhD Topic: Regression testing effectiveness in black-box environment</p>
-    </article>
-    <article id="unibz-case" aria-labelledby="unibz-case-label">
-      <h3 id="unibz-case-label">Master in Computer Science (MSc)</h3>
-      <header>
-        Free University of Bolzano-Bozen, Italy<br>
-        <strong>Center of Applied Software Engineering (CASE)</strong> <br>
-        October 2007 - March 2011 * ~3 years (Bolzano-Bozen, Italy)
-      </header>
-      <p>MSc Thesis: Entropy-based test prioritization in black-box environment</p>
-    </article>
-    <article id="nsu" aria-labelledby="nsu-label">
-      <h3 id="nsu-label">4 years BSc degree in Applied Mathematics</h3>
-      <header>
-        <strong>State University of Novosibirsk (NSU)</strong> <br>
-        September 2002 - July 2006 * 4 years (Novosibirsk, Akademgorodok, Russia)<br>
-      </header>
-      <p>BSc Thesis: Semantic-based reinforcement learning algorithm.</p>
-    </article>
-  </section>
-  <hr>
-  <section id="languages" aria-labelledby="languages-label">
-    <h3 id="languages-label">Languages</h3>
+    </section>
+    <hr>
+    <section id="education" aria-labelledby="education-label">
+      <h2 id="education-label">Education</h2>
+      <article id="unibz" aria-labelledby="unibz-label">
+        <h3 id="unibz-label">PhD in Software Engineering (suspended)</h3>
+        <header>
+          <strong>Free University of Bolzano-Bozen, Italy</strong> <br>
+          January 2012 - January 2013 * ~1 year (Bolzano-Bozen, Italy)<br>
+        </header>
+        <p>PhD Topic: Regression testing effectiveness in black-box environment</p>
+      </article>
+      <article id="unibz-case" aria-labelledby="unibz-case-label">
+        <h3 id="unibz-case-label">Master in Computer Science (MSc)</h3>
+        <header>
+          Free University of Bolzano-Bozen, Italy<br>
+          <strong>Center of Applied Software Engineering (CASE)</strong> <br>
+          October 2007 - March 2011 * ~3 years (Bolzano-Bozen, Italy)
+        </header>
+        <p>MSc Thesis: Entropy-based test prioritization in black-box environment</p>
+      </article>
+      <article id="nsu" aria-labelledby="nsu-label">
+        <h3 id="nsu-label">4 years BSc degree in Applied Mathematics</h3>
+        <header>
+          <strong>State University of Novosibirsk (NSU)</strong> <br>
+          September 2002 - July 2006 * 4 years (Novosibirsk, Akademgorodok, Russia)<br>
+        </header>
+        <p>BSc Thesis: Semantic-based reinforcement learning algorithm.</p>
+      </article>
+    </section>
+    <hr>
+    <section id="languages" aria-labelledby="languages-label">
+      <h3 id="languages-label">Languages</h3>
+        <ul>
+          <li><strong>Russian</strong>: Native speaker</li>
+          <li><strong>English</strong>: Fluent speaking and writing (C1/2 university course)</li>
+          <li><strong>Italian</strong>: Fluent speaking and writing (C1 CELI4 certificate)</li>
+          <li><strong>German</strong>: Average communication proficiency (B1)</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="other" aria-labelledby="other-label">
+      <h3 id="other-label">Other skills and competences</h3>
       <ul>
-        <li><strong>Russian</strong>: Native speaker</li>
-        <li><strong>English</strong>: Fluent speaking and writing (C1/2 university course)</li>
-        <li><strong>Italian</strong>: Fluent speaking and writing (C1 CELI4 certificate)</li>
-        <li><strong>German</strong>: Average communication proficiency (B1)</li>
+        <li>Project management experience</li>
+        <li>High adaptability, abroad living experience</li>
+        <li>Easy learning, good communication skills</li>
+        <li>Passion for sport: boxing, free-diving, rock climbing</li>
+        <li>Balboa dancer and teacher (it's a swing dance)</li>
       </ul>
-  </section>
-  <hr>
-  <section id="other" aria-labelledby="other-label">
-    <h3 id="other-label">Other skills and competences</h3>
-    <ul>
-      <li>Project management experience</li>
-      <li>High adaptability, abroad living experience</li>
-      <li>Easy learning, good communication skills</li>
-      <li>Passion for sport: boxing, free-diving, rock climbing</li>
-      <li>Balboa dancer and teacher (it's a swing dance)</li>
-    </ul>
-  </section>
+    </section>
+  </main>
 </body>
 </html>
