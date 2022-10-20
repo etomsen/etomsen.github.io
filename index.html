@@ -1,381 +1,403 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Evgeny Tomsen: CV</title>
-  <meta charset="utf-8">
-  <style type="text/css">
-    body {
-      font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, Song, sans-serif;
-      color: #2c3f51;
-      width: 100%;
-      font-size: 14px;
-    }
-
-    main {
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.5;
-      tab-size: 4;
-      text-align: start;
-      padding: 0 50px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-weight: bold;
-      margin: 1.2em 0 0.6em 0;
-      text-align: start;
-    }
-    
-    h1 {
-      font-size: 2.2rem;
-      line-height: 1.1;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-    }
-
-    h3 {
-      font-size: 1.1rem;
-      margin-top: 0;
-      margin-block-start: 0;
-    }
-
-    p {
-      line-height: 1.5;
-      margin: 0 0 1.1em;
-    }
-
-    @media only screen and (min-width: 960px) {
-      body {
-        font-size: 16px;
-      }
-
-      main {
-        max-width: 700px;
-      }
-      p {
-        line-height: 1.6;
-      }
-    }
-
-    a {
-      background: transparent;
-      color: #1980e6;
-      text-decoration: none;
-      -webkit-transition: background-color ease-in-out .15s, color ease-in-out .15s, border-color ease-in-out .15s;
-      transition: background-color ease-in-out .15s, color ease-in-out .15s, border-color ease-in-out .15s;
-    }
-
-    a:hover, a:focus {
-      color: #0f4d8a;
-      text-decoration: underline;
-    }
-
-    header {
-      margin-bottom: 1rem;
-    }
-
-    article {
-      border-top: 2px dashed;
-      margin:0; padding: 30px;
-      counter-increment: section;
-      position: relative;
-    }
-
-    article:nth-child(odd) > h3 {
-      text-align: right;
-    }
-
-    article:nth-child(odd) > header {
-      text-align: right;
-    }
-
-    article::before {
-      box-sizing: content-box;
-      content: " ";
-      position: absolute;
-      height: 5rem;
-      width: 5rem;
-      max-height: 65px;
-      max-width: 65px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      background-color: white;
-      border: 5px solid white;
-      margin-top: -10px;
-      background-image: var(--company-img);
-    }
-
-    article:nth-child(even):before {
-      right: 100%;
-      margin-right: -20px;
-    }
-
-    article:nth-child(odd):before {
-      left: 100%; 
-      margin-left: -20px;
-    }
-
-    article:nth-child(even) {
-      border-left: 2px dashed #2c3f51;
-      border-top-left-radius: 30px;
-      border-bottom-left-radius: 30px;
-      margin-right: 30px; 
-      padding-right: 0;
-    }
-
-    article:nth-child(odd) {
-      border-right: 2px dashed #2c3f51;
-      border-top-right-radius: 30px;
-      border-bottom-right-radius: 30px;
-      margin-left: 30px; 
-      padding-left: 0;
-    }
-
-    article:first-of-type {
-      border-top: 0;
-      border-top-right-radius:0;
-      border-top-left-radius:0;
-    }
-
-    article:last-of-type {
-      border-bottom-right-radius:0;
-      border-bottom-left-radius:0;
-    }
-
-    img {
-      float: left;
-      margin-right: 1rem;
-    }
-
-    article[id="brightcape"] {
-      --company-img: url(../img/brightcape.png);
-    }
-
-    article[id="evision"] {
-      --company-img: url(../img/evision.png);
-    }
-
-    article[id="itransition"] {
-      --company-img: url(../img/evision.png);
-    }
-    article[id="selftao"] {
-      --company-img: url(../img/solhea.png);
-    }
-    article[id="klm"] {
-      --company-img: url(../img/klm.png);
-    }
-    article[id="eurac"] {
-      --company-img: url(../img/eurac.png);
-    }
-    article[id="coolmedia"] {
-      --company-img: url(../img/mediaset.png);
-    }
-    article[id="case"] {
-      --company-img: url(../img/esercito.png);
-    }
-    article[id="edp"] {
-      --company-img: url(../img/solhea.png);
-    }
-    article[id="nextrailer"] {
-      --company-img: url(../img/oxford.png);
-    }
-    article[id="42matters"] {
-      --company-img: url(../img/42matters.png);
-    }
-    article[id="unibz"] {
-      --company-img: url(../img/unibz.png);
-    }
-    article[id="unibz-case"] {
-      --company-img: url(../img/case.png);
-    }
-    article[id="nsu"] {
-      --company-img: url(../img/nsu.png);
-    }
-  </style>
+    <title>Evgeny Tomsen: CV</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, Song, sans-serif;
+            color: #2c3f51;
+            width: 100%;
+            font-size: 14px;
+        }
+        
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+            tab-size: 4;
+            text-align: start;
+            padding: 0 50px;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+            margin: 1.2em 0 0.6em 0;
+            text-align: start;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            line-height: 1.1;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 0;
+            margin-block-start: 0;
+        }
+        
+        p {
+            line-height: 1.5;
+            margin: 0 0 1.1em;
+        }
+        
+        @media only screen and (min-width: 960px) {
+            body {
+                font-size: 16px;
+            }
+            
+            main {
+                max-width: 700px;
+            }
+            p {
+                line-height: 1.6;
+            }
+        }
+        
+        a {
+            background: transparent;
+            color: #1980e6;
+            text-decoration: none;
+            -webkit-transition: background-color ease-in-out .15s, color ease-in-out .15s, border-color ease-in-out .15s;
+            transition: background-color ease-in-out .15s, color ease-in-out .15s, border-color ease-in-out .15s;
+        }
+        
+        a:hover, a:focus {
+            color: #0f4d8a;
+            text-decoration: underline;
+        }
+        
+        header {
+            margin-bottom: 1rem;
+        }
+        
+        article {
+            border-top: 2px dashed;
+            margin:0; padding: 30px;
+            counter-increment: section;
+            position: relative;
+        }
+        
+        article:nth-child(odd) > h3 {
+            text-align: right;
+        }
+        
+        article:nth-child(odd) > header {
+            text-align: right;
+        }
+        
+        article::before {
+            box-sizing: content-box;
+            content: " ";
+            position: absolute;
+            height: 5rem;
+            width: 5rem;
+            max-height: 65px;
+            max-width: 65px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: white;
+            border: 5px solid white;
+            margin-top: -10px;
+            background-image: var(--company-img);
+        }
+        
+        article:nth-child(even):before {
+            right: 100%;
+            margin-right: -20px;
+        }
+        
+        article:nth-child(odd):before {
+            left: 100%; 
+            margin-left: -20px;
+        }
+        
+        article:nth-child(even) {
+            border-left: 2px dashed #2c3f51;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            margin-right: 30px; 
+            padding-right: 0;
+        }
+        
+        article:nth-child(odd) {
+            border-right: 2px dashed #2c3f51;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            margin-left: 30px; 
+            padding-left: 0;
+        }
+        
+        article:first-of-type {
+            border-top: 0;
+            border-top-right-radius:0;
+            border-top-left-radius:0;
+        }
+        
+        article:last-of-type {
+            border-bottom-right-radius:0;
+            border-bottom-left-radius:0;
+        }
+        
+        img {
+            float: left;
+            margin-right: 1rem;
+        }
+        
+        article[id="brightcape"] {
+            --company-img: url(../img/brightcape.png);
+        }
+        
+        article[id="evision"] {
+            --company-img: url(../img/evision.png);
+        }
+        
+        article[id="itransition"] {
+            --company-img: url(../img/evision.png);
+        }
+        article[id="selftao"] {
+            --company-img: url(../img/solhea.png);
+        }
+        article[id="klm"] {
+            --company-img: url(../img/klm.png);
+        }
+        article[id="eurac"] {
+            --company-img: url(../img/eurac.png);
+        }
+        article[id="coolmedia"] {
+            --company-img: url(../img/mediaset.png);
+        }
+        article[id="case"] {
+            --company-img: url(../img/esercito.png);
+        }
+        article[id="edp"] {
+            --company-img: url(../img/solhea.png);
+        }
+        article[id="nextrailer"] {
+            --company-img: url(../img/oxford.png);
+        }
+        article[id="42matters"] {
+            --company-img: url(../img/42matters.png);
+        }
+        article[id="unibz"] {
+            --company-img: url(../img/unibz.png);
+        }
+        article[id="unibz-case"] {
+            --company-img: url(../img/case.png);
+        }
+        article[id="nsu"] {
+            --company-img: url(../img/nsu.png);
+        }
+    </style>
 </head>
 <body>
-  <main>
-    <section aria-labelledby="evgeny-tomsen">
-    <h1 id="evgeny-tomsen">Evgeny Tomsen</h1>
-    <p>Привет / Éila / Griesti! I'm <strong>Evgeny Tomsen</strong> - Javascript developer 💻, father of Lev 🦁 and Südtirol mountains lover 🏔 . For job matters please write me an <a href="mailto:etomsen@yandex.ru" target="_blank">email</a>, otherwise feel free to chat with me via <a href="https://t.me/daubihe" target="_blank">telegram</a>. I'm fluent in English, Italian and Russian... Angular, React, Svelte, Ionic, Stencil, Node.js and some others.
-    </p>
-    </section>
-    <hr/>
-    <section aria-labelledby="experience-label">
-    <h2 id="experience-label">Experience</h2>
-    <article aria-labelledby="itransition-label" id="itransition">
-      <h3 id="itransition-label">Senior Frontend Developer</h4>
-      <header>
-        <a href="https://www.wolterskluwer.com/en/" target="_blank">eVision Software/ Enablon / <strong>Wolters Kluwer</strong></a><br/>
-        January 2021 – Now (The Hague, remotely via <a href="https://www.itransition.com/" target="_blank">iTransition</a> / <a href="https://www.solhea.com/" target="_blank">Solhea</a>)<br/>
-      </header>
-      <p>After a year and half of break I was generously invited to enforce the eVision team again to work in <b>React</b> on new features of <a href="https://www.wolterskluwer.com/en/solutions/enablon/permit-to-work-software" target="_blank">PermitVision</a> and improve its PWA support</p>
-    </article>
-    <article id="selftao" aria-labelledby="selftao-label">
-      <h3 id="selftao-label">Frontend Tech Lead</h3>
-      <header>
-        <a href="http://solhea.com" target="_blank">SOLHEA Srl</a><br/>
-        April 2020 - Now (Bolzano, Italy)<br/>
-      </header>
-      <p>
-        As a part of collaboration with Solhea started in 2013, we developed <a href="http://www.selftao.com/">SelfTAO</a> - an application to assist patients on oral anticoagulant therapy (TAO). The system aims for collecting data, monitoring the therapy and clinical risk management. My tasks were to architect the mobile app in <b>Ionic/Angular/Cordova</b>, design the <b>Google Firebase</b> backend for authentication and data storage. At the latest stage of the project I've acted as team-lead/product owner for an external developers reviewing merge requests and creating user stories. </p>
-    </article>
-    <article id="brightcape">
-      <h3>Frontend Tech Lead</h3>
-      <header>
-        <strong>BrightCape</strong><br/>
-        September 2019 – April 2020 (Eindhoven, Netherlands)<br/>
-      </header>
-      <p>I've joined <a href="https://brightcape.nl/">BrightCape</a> as a front-end lead to setup the development process for the ongoing project and improve the architecture. With the small team we work in <b>Angular</b> stack on refactoring the management system for the <a href="https://www.sara-robotics.com/">SARA Robotics Health Assistant</a> and creating the hybrid application for the robot itself. My key responsibilities were maintaining the source quality and perform the knowledge transfer. In course of half a year we've managed to structure the project, create a custom <strong>design system</strong> and halve the original bundle size.</p>
-    </article>
-    <article id="evision">
-      <h3>Senior Frontend Developer</h4>
-      <header>
-        <a href="https://www.wolterskluwer.com/en/" target="_blank">eVision Software/ Enablon / <strong>Wolters Kluwer</strong></a><br/>
-        April 2019 – September 2019 (The Hague, Netherlands)
-      </header>
-      <p>
-        First half a year spent in the Hague working on <a href="https://www.wolterskluwer.com/en/solutions/enablon/permit-to-work-software" target="_blank">eVision PermitVision</a> permit-to-work and risk assessment software was not an easy path, but helped me to get a chance to deeply work with <b>React</b> stack on enterprise scale, being able to coordinate between numerous teams with drastic knowledge diversities. I've initiated the move to typescript and have setup the migration flow for a monolith app.
-      </p>
-    </article>
-    <article id="klm" aria-labelledby="klm-label">
-      <h3 id="klm-label">Senior Fullstack Developer</h3>
-      <header>
-        <strong>KLM Royal Dutch Airlines</strong>&nbsp;(through <a href="https://www.openweb.nl/">OpenWeb IT body-bank</a>)<br/>
-        May 2018 – April 2019 * 1 year (Amstelveen, Netherlands)
-      </header>
-      <p>As a fullstack engineer in the <a href="https://about.sourcegraph.com/graphql/building-a-large-scale-multi-branded-web-app-on-gql-foundation">KLM BlueWeb</a> team I contributed to the development of the Royal Dutch Airlines main web site which is a large scale multi brand Web Application based on <b>Angular, Apollo, Node.js</b> and <b>GraphQL</b>. BlueWeb is considered to be one of the largest Angular implementations in the world, being reference to others projects developed in regular contact and coordiation with Google and Apollo teams. The working profile of KLM frontend engineers includes not only the pure web skills, but also the 'full stack' expertise which was the most exciting part and source of new knowledge for me personally.</p>
-    </article>
-    <article id="eurac" aria-labelledby="eurac-label">
-      <h3 id="eurac-label">Software Engineer</h3>
-      <header>
-        <strong>EURAC Research</strong> <br/>
-        September 2013 – May 2017  * ~4 years (Bolzano-Bozen, Italy)
-      </header>
-      <p>
-        I worked in the <a href="http://www.eurac.edu" target="_blank">European Academy of Research</a>, a structure that unites 12 research institutes for almost 4 years as an IT specialist, developing and maintaining several solutions for managing the internal resources and knowledge. We used a wide range of technologies in projects I've participated:
-      </p>
-      <ul>
-        <li><i>Java/Spring/Hibernate</i> for internal services and REST APIs</li>
-        <li><i>Java/Android</i>: acted as an Android developer and SCRUM master in <a href="https://play.google.com/store/apps/developer?id=Scientific%20Network%20South%20Tyrol&amp;hl=en" target="_blank">several mobile projects</a> developed by our team: from local news application to mobile e-learning platform.</li>
-        <li><i>NodeJS</i> for small recommendation service used within the EURAC internal web.</li>
-        <li><i>Ionic/Angular</i>I've created a couple of mobile app prototypes using Ionic.</li>
-      </ul>
-    </article>
-    <article id="coolmedia" aria-labelledby="coolmedia-label">
-      <h3 id="coolmedia-label">Software Engineer (project)</h3>
-      <header>
-        Coolmedia Interactive / SmarDTV NAGRA Kudelski / <strong>Mediaset  S.p.A.</strong> <br>
-        March 2014 – November 2014  * ~6 month <br>
-        Rome, Italy / La Ciotat, France / Milan, Italy
-      </header>
-      <p>
-        Within the <a href="http://www.mediasetpremium.it/come-vedi/smartcam/" target="_blank">Mediaset Smartcam</a> project for Mediaset Italy, together with Coolmedia Interactive we've developed a hybrid application for iOS/Android for a new generation of CAM CI+ that manages the access to broadcast and on-demand Pay TV contents. The device has been designed and manufactured by SmarDTV, a company belonging to the Kudelsky Group. We spent a lot of time optimizing Sencha Touch rendering. We've also developed our own Cordova plugins for the SmartCAM device integration.
-      </p>
-    </article>
-    <article id="edp" aria-labelledby="edp-label">
-      <h3>Consultant/Engineer (projects)</h3>
-      <header>
-        <a href="http://solhea.com" target="_blank"> <strong>SOLHEA Srl</strong> / Inquiria / EDP Progetti s.r.l</a><br/>
-        August 2013 - May 2018<br/>
-        Bolzano-Bozen, Italy
-      </header>
-      <p>We've established a long-term collaboration with Solhea Srl (and it's legal predecessors) where I contribute as an on-demand consultant/engineer on several (mainly medical) projects:</p>
-      <p>
-        <img alt="TiTengoInformato" width="65" height="65" src="../img/titengo.png"> 
-        <a href="https://www.repubblica.it/salute/medicina-e-ricerca/2019/04/08/news/pronto_soccorso_notizie_in_dirette_con_la_app_che_colega_medici_e_paziente-223571029/">TiTengoInformato</a> is a first app of the kind in Italy that is able to provide a real-time connection between the inner part of the hospital's first aid process and the outer world, making relatives and family members aware of diagnostic and therapeutic events inside the emergency rooms. The part of TiTengoInformato project implemented by me consist of 3 parts: a patients' <b>PWA</b> built in <b>Stencil.js</b> and an admin app in Ionic.
-        I've also designed and implement the API services for authentication and proxying to hospital services in <b>GraphQL</b>, <b>PostgreSQL</b>, <b>Node.JS</b> (leveraging typescript).
-      </p>
-      <p>
-        <img alt="Easyrec" width="65" height="65" src="../img/easyrec.png"> 
-        In course of 2 years <a href="https://www.inquiria.eu" target="_blank">Inquiria Investigations</a> invested in creation of several applications and services. <a href="https://play.google.com/store/apps/details?id=com.ionicframework.myionicapp151171&amp;hl=en">EasyRec</a> - a solution for credit collectorsis is one of them. I've performed an analysis as a consultant, developed the specification for the mobile app, designed and developed the system. I've implemented the client (iOS and Android) in <strong>Ionic</strong> and a <strong>Node.JS</strong> REST API server integrated with the existing back-office system.
-      </p>
-      <p>
-        <img alt="Roche Diagnostics" width="65" height="65" src="../img/roche.png"> 
-        <a href="http://www.taonet.net/">TaoTouch</a> was a pilot project in collaboration with Roche Diagnostics: a hybrid application and a web service that allows doctors to follow their patient to evaluate medical treatment progress. I've designed and developed the app for iOS/Android in <strong>Javascript/Ionic</strong> and implemented a server side REST service connected to the original Oracle database in <strong>Java/Spring/Hibernate</strong>. The important part of the project was to extract data from anticoagulation devices via bluetooth and forward them to the service. Working in collaboration with Roche R&amp;D, we've implemented the cordova plugin to support the proprietary data layer binary protocol.
-      </p>
-    </article>
-    <article id="case" aria-labelledby="case-id">
-      <h3 id="case-id">Invited Lecturer</h3>
-      <header>
-        CASE - Center for Applied Software Engineering<br>
-        <strong>General Staff of Italian Army</strong> <br>
-        March 2012 * 1 week (Bolzano-Bozen, Italy / Rome, Italy)
-      </header>
-      <p>I was giving a series of lectures (40h total) concerning Web Development and Spring Framework for the General Staff of Italian Army (Stato Maggiore dell' Esercito) as a part of my PhD assignment.</p>
-    </article>
-    <article id="nextrailer" aria-labelledby="nextrailer-label">
-      <h3 id="nextrailer-label">Co-founder at NexTrailer</h3>
-      <header>
-        <strong>ISIS Software Incubator at Oxford University</strong> <br>
-        December 2011 – August 2014 * ~1 year <br>
-        Bolzano-Bozen, Italy / Oxford, UK</p>
-      </header>
-      <p>NexTrailer was a movie search startup based on movie trailers. I was one of co-founders and my main responsibility were the UI features. For a year the NexTrailer was a part of ISI Software incubator in Oxford University and then successfully sunk but served one of the co-founders to defend the PhD thesis on <a href="https://www.researchgate.net/publication/258242169_Feature_Usage_Diagram_for_Feature_Reduction" target="_blank">Feature Reduction in Software Systems</a>.</p>
-    </article>
-    <article id="42matters" aria-labelledby="42matters-label">
-      <h3 id="42matters-label">Data visualisation and analytics (project)</h3>
-      <header> 
-        <strong>42matters AG</strong> <br>
-        October 2011 – December 2011 * ~3 months <br>
-        Bolzano-Bozen, Italy / Zürich, Switzerland
-      </header>
-      <p>I've helped my friends from <a href="https://42matters.com" target="_blank">ETH spin-off 42matters</a>, to develop an analysis and visualization tool for their Appaware Android Application Market using the <strong>MongoDB</strong> aggregations and some HTML/CSS/JS. Main task was to predict better application release/update time slot, suggest the price range for different market segments.</p>
-    </article>
-    </section>
-    <hr>
-    <section id="education" aria-labelledby="education-label">
-      <h2 id="education-label">Education</h2>
-      <article id="unibz" aria-labelledby="unibz-label">
-        <h3 id="unibz-label">PhD in Software Engineering (suspended)</h3>
-        <header>
-          <strong>Free University of Bolzano-Bozen, Italy</strong> <br>
-          January 2012 - January 2013 * ~1 year (Bolzano-Bozen, Italy)<br>
-        </header>
-        <p>PhD Topic: Regression testing effectiveness in black-box environment</p>
-      </article>
-      <article id="unibz-case" aria-labelledby="unibz-case-label">
-        <h3 id="unibz-case-label">Master in Computer Science (MSc)</h3>
-        <header>
-          Free University of Bolzano-Bozen, Italy<br>
-          <strong>Center of Applied Software Engineering (CASE)</strong> <br>
-          October 2007 - March 2011 * ~3 years (Bolzano-Bozen, Italy)
-        </header>
-        <p>MSc Thesis: Entropy-based test prioritization in black-box environment</p>
-      </article>
-      <article id="nsu" aria-labelledby="nsu-label">
-        <h3 id="nsu-label">4 years BSc degree in Applied Mathematics</h3>
-        <header>
-          <strong>State University of Novosibirsk (NSU)</strong> <br>
-          September 2002 - July 2006 * 4 years (Novosibirsk, Akademgorodok, Russia)<br>
-        </header>
-        <p>BSc Thesis: Semantic-based reinforcement learning algorithm.</p>
-      </article>
-    </section>
-    <hr>
-    <section id="languages" aria-labelledby="languages-label">
-      <h3 id="languages-label">Languages</h3>
-        <ul>
-          <li><strong>Russian</strong>: Native speaker</li>
-          <li><strong>English</strong>: Fluent speaking and writing (C1/2 university course)</li>
-          <li><strong>Italian</strong>: Fluent speaking and writing (C1 CELI4 certificate)</li>
-          <li><strong>German</strong>: Average communication proficiency (B1)</li>
-        </ul>
-    </section>
-    <hr>
-    <section id="other" aria-labelledby="other-label">
-      <h3 id="other-label">Other skills and competences</h3>
-      <ul>
-        <li>Project management experience</li>
-        <li>High adaptability, abroad living experience</li>
-        <li>Easy learning, good communication skills</li>
-        <li>Passion for sport: boxing, free-diving, rock climbing</li>
-        <li>Balboa dancer and teacher (it's a swing dance)</li>
-      </ul>
-    </section>
-  </main>
-</body>
-</html>
+    <main>
+        <section aria-labelledby="evgeny-tomsen">
+            <h1 id="evgeny-tomsen">Evgeny Tomsen</h1>
+            <p>
+                Привет / Éila / Griesti! I'm <strong>Evgeny Tomsen</strong> - Javascript developer 💻, father of Lev 🦁 and
+                Südtirol mountains lover 🏔 . For job matters please write me an
+                <a href="mailto:evgeny@tomsen.me" target="_blank">email</a>,
+                otherwise feel free to chat with me via <a href="https://t.me/daubihe" target="_blank">telegram</a>.
+                I'm fluent in English, Italian and Russian... Angular, React, Svelte, Ionic, Stencil, Node.js and some others.
+            </p>
+        </section>
+        <hr/>
+        <section aria-labelledby="experience-label">
+            <h2 id="experience-label">Experience</h2>
+            <article aria-labelledby="itransition-label" id="itransition">
+                <h3 id="itransition-label">Senior Frontend Developer</h4>
+                    <header>
+                        <a href="https://www.wolterskluwer.com/en/" target="_blank">eVision Software/ Enablon / <strong>Wolters Kluwer</strong></a><br/>
+                        January 2021 - Now (The Hague, remotely via
+                        <a href="https://www.itransition.com/" target="_blank">iTransition</a> and <a href="https://www.solhea.com/" target="_blank">Solhea</a>)<br/>
+                    </header>
+                    <p>
+                        After a year and half of break I was generously invited
+                        to enforce the eVision team again to work in <b>React</b> on new features of
+                        <a href="https://www.wolterskluwer.com/en/solutions/enablon/permit-to-work-software" target="_blank">PermitVision</a>
+                        and improve its PWA support</p>
+                </article>
+                <article id="selftao" aria-labelledby="selftao-label">
+                    <h3 id="selftao-label">Frontend Tech Lead</h3>
+                    <header>
+                        <a href="http://solhea.com" target="_blank">SOLHEA Srl</a><br/>
+                        April 2020 - Now (Bolzano, Italy)<br/>
+                    </header>
+                    <p>
+                        As a part of collaboration with Solhea started in 2013, we've developed several web systems and mobile apps
+                        in the field of therapy/clinical risk management, work security event management.
+                        My tasks were to architect the frontend for web/mobile apps, design (mainly serverless GCP) backend and data storage.
+                        I've also acted as team-lead for external developers helping with merge requests review, knowledge sharing and on-boarding process.
+                        As a main achievement, I've handled the monorepo migration for several projects consisted of web, mobile and backend part.
+                        Not only did it help us to improve the code quality by sharing common parts, but improved the projects review and delivery.
+                    </p>
+                    </article>
+                    <article id="brightcape">
+                        <h3>Frontend Tech Lead</h3>
+                        <header>
+                            <strong>BrightCape</strong><br/>
+                            September 2019 – April 2020 (Eindhoven, Netherlands)<br/>
+                        </header>
+                        <p>I've joined <a href="https://brightcape.nl/">BrightCape</a> as a front-end lead to adjust the development process for the ongoing project and improve the architecture.
+                            With the small team we work in <b>Angular</b> stack on refactoring the management system for the
+                            <a href="https://www.sara-robotics.com/">SARA Robotics Health Assistant</a> and creating
+                            the hybrid application for the robot itself. My key responsibilities were maintaining
+                            the source quality and perform the knowledge transfer. In course of half a year we've managed to structure the project,
+                            create a custom <strong>design system</strong> and halve the original bundle size.</p>
+                    </article>
+                    <article id="evision">
+                        <h3>Senior Frontend Developer</h4>
+                            <header>
+                                <a href="https://www.wolterskluwer.com/en/" target="_blank">eVision Software/ Enablon / <strong>Wolters Kluwer</strong></a><br/>
+                                April 2019 – September 2019 (The Hague, Netherlands)
+                            </header>
+                            <p>
+                                First half a year spent in the Hague working on <a href="https://www.wolterskluwer.com/en/solutions/enablon/permit-to-work-software" target="_blank">eVision PermitVision</a> permit-to-work and risk assessment software was not an easy path, but helped me to get a chance to deeply work with <b>React</b> stack on enterprise scale, being able to coordinate between numerous teams with drastic knowledge diversities. I've initiated the move to typescript and have setup the migration flow for a monolith app.
+                            </p>
+                        </article>
+                        <article id="klm" aria-labelledby="klm-label">
+                            <h3 id="klm-label">Senior Fullstack Developer</h3>
+                            <header>
+                                <strong>KLM Royal Dutch Airlines</strong>&nbsp;(through <a href="https://www.openweb.nl/">OpenWeb IT body-bank</a>)<br/>
+                                May 2018 – April 2019 * 1 year (Amstelveen, Netherlands)
+                            </header>
+                            <p>As a fullstack engineer in the <a href="https://about.sourcegraph.com/graphql/building-a-large-scale-multi-branded-web-app-on-gql-foundation">KLM BlueWeb</a> team I contributed to the development of the Royal Dutch Airlines main web site which is a large scale multi brand Web Application based on <b>Angular, Apollo, Node.js</b> and <b>GraphQL</b>. BlueWeb is considered to be one of the largest Angular implementations in the world, being reference to others projects developed in regular contact and coordiation with Google and Apollo teams. The working profile of KLM frontend engineers includes not only the pure web skills, but also the 'full stack' expertise which was the most exciting part and source of new knowledge for me personally.</p>
+                        </article>
+                        <article id="eurac" aria-labelledby="eurac-label">
+                            <h3 id="eurac-label">Software Engineer</h3>
+                            <header>
+                                <strong>EURAC Research</strong> <br/>
+                                September 2013 – May 2017  * ~4 years (Bolzano-Bozen, Italy)
+                            </header>
+                            <p>
+                                I worked in the <a href="http://www.eurac.edu" target="_blank">European Academy of Research</a>, a structure that unites 12 research institutes for almost 4 years as an IT specialist, developing and maintaining several solutions for managing the internal resources and knowledge. We used a wide range of technologies in projects I've participated:
+                            </p>
+                            <ul>
+                                <li><i>Java/Spring/Hibernate</i> for internal services and REST APIs</li>
+                                <li><i>Java/Android</i>: acted as an Android developer and SCRUM master in <a href="https://play.google.com/store/apps/developer?id=Scientific%20Network%20South%20Tyrol&amp;hl=en" target="_blank">several mobile projects</a> developed by our team: from local news application to mobile e-learning platform.</li>
+                                <li><i>NodeJS</i> for small recommendation service used within the EURAC internal web.</li>
+                                <li><i>Ionic/Angular</i>I've created a couple of mobile app prototypes using Ionic.</li>
+                            </ul>
+                        </article>
+                        <article id="coolmedia" aria-labelledby="coolmedia-label">
+                            <h3 id="coolmedia-label">Software Engineer (project)</h3>
+                            <header>
+                                Coolmedia Interactive / SmarDTV NAGRA Kudelski / <strong>Mediaset  S.p.A.</strong> <br>
+                                March 2014 – November 2014  * ~6 month <br>
+                                Rome, Italy / La Ciotat, France / Milan, Italy
+                            </header>
+                            <p>
+                                Within the <a href="http://www.mediasetpremium.it/come-vedi/smartcam/" target="_blank">Mediaset Smartcam</a> project for Mediaset Italy, together with Coolmedia Interactive we've developed a hybrid application for iOS/Android for a new generation of CAM CI+ that manages the access to broadcast and on-demand Pay TV contents. The device has been designed and manufactured by SmarDTV, a company belonging to the Kudelsky Group. We spent a lot of time optimizing Sencha Touch rendering. We've also developed our own Cordova plugins for the SmartCAM device integration.
+                            </p>
+                        </article>
+                        <article id="edp" aria-labelledby="edp-label">
+                            <h3>Consultant/Engineer (projects)</h3>
+                            <header>
+                                <a href="http://solhea.com" target="_blank"> <strong>SOLHEA Srl</strong> / Inquiria / EDP Progetti s.r.l</a><br/>
+                                August 2013 - May 2018<br/>
+                                Bolzano-Bozen, Italy
+                            </header>
+                            <p>We've established a long-term collaboration with Solhea Srl (and it's legal predecessors) where I contribute as an on-demand consultant/engineer on several (mainly medical) projects:</p>
+                            <p>
+                                <img alt="TiTengoInformato" width="65" height="65" src="../img/titengo.png"> 
+                                <a href="https://www.repubblica.it/salute/medicina-e-ricerca/2019/04/08/news/pronto_soccorso_notizie_in_dirette_con_la_app_che_colega_medici_e_paziente-223571029/">TiTengoInformato</a> is a first app of the kind in Italy that is able to provide a real-time connection between the inner part of the hospital's first aid process and the outer world, making relatives and family members aware of diagnostic and therapeutic events inside the emergency rooms. The part of TiTengoInformato project implemented by me consist of 3 parts: a patients' <b>PWA</b> built in <b>Stencil.js</b> and an admin app in Ionic.
+                                I've also designed and implement the API services for authentication and proxying to hospital services in <b>GraphQL</b>, <b>PostgreSQL</b>, <b>Node.JS</b> (leveraging typescript).
+                            </p>
+                            <p>
+                                <img alt="Easyrec" width="65" height="65" src="../img/easyrec.png"> 
+                                In course of 2 years <a href="https://www.inquiria.eu" target="_blank">Inquiria Investigations</a> invested in creation of several applications and services. <a href="https://play.google.com/store/apps/details?id=com.ionicframework.myionicapp151171&amp;hl=en">EasyRec</a> - a solution for credit collectorsis is one of them. I've performed an analysis as a consultant, developed the specification for the mobile app, designed and developed the system. I've implemented the client (iOS and Android) in <strong>Ionic</strong> and a <strong>Node.JS</strong> REST API server integrated with the existing back-office system.
+                            </p>
+                            <p>
+                                <img alt="Roche Diagnostics" width="65" height="65" src="../img/roche.png"> 
+                                <a href="http://www.taonet.net/">TaoTouch</a> was a pilot project in collaboration with Roche Diagnostics: a hybrid application and a web service that allows doctors to follow their patient to evaluate medical treatment progress. I've designed and developed the app for iOS/Android in <strong>Javascript/Ionic</strong> and implemented a server side REST service connected to the original Oracle database in <strong>Java/Spring/Hibernate</strong>. The important part of the project was to extract data from anticoagulation devices via bluetooth and forward them to the service. Working in collaboration with Roche R&amp;D, we've implemented the cordova plugin to support the proprietary data layer binary protocol.
+                            </p>
+                        </article>
+                        <article id="case" aria-labelledby="case-id">
+                            <h3 id="case-id">Invited Lecturer</h3>
+                            <header>
+                                CASE - Center for Applied Software Engineering<br>
+                                <strong>General Staff of Italian Army</strong> <br>
+                                March 2012 * 1 week (Bolzano-Bozen, Italy / Rome, Italy)
+                            </header>
+                            <p>I was giving a series of lectures (40h total) concerning Web Development and Spring Framework for the General Staff of Italian Army (Stato Maggiore dell' Esercito) as a part of my PhD assignment.</p>
+                        </article>
+                        <article id="nextrailer" aria-labelledby="nextrailer-label">
+                            <h3 id="nextrailer-label">Co-founder at NexTrailer</h3>
+                            <header>
+                                <strong>ISIS Software Incubator at Oxford University</strong> <br>
+                                December 2011 – August 2014 * ~1 year <br>
+                                Bolzano-Bozen, Italy / Oxford, UK</p>
+                            </header>
+                            <p>NexTrailer was a movie search startup based on movie trailers. I was one of co-founders and my main responsibility were the UI features. For a year the NexTrailer was a part of ISI Software incubator in Oxford University and then successfully sunk but served one of the co-founders to defend the PhD thesis on <a href="https://www.researchgate.net/publication/258242169_Feature_Usage_Diagram_for_Feature_Reduction" target="_blank">Feature Reduction in Software Systems</a>.</p>
+                        </article>
+                        <article id="42matters" aria-labelledby="42matters-label">
+                            <h3 id="42matters-label">Data visualisation and analytics (project)</h3>
+                            <header> 
+                                <strong>42matters AG</strong> <br>
+                                October 2011 – December 2011 * ~3 months <br>
+                                Bolzano-Bozen, Italy / Zürich, Switzerland
+                            </header>
+                            <p>I've helped my friends from <a href="https://42matters.com" target="_blank">ETH spin-off 42matters</a>, to develop an analysis and visualization tool for their Appaware Android Application Market using the <strong>MongoDB</strong> aggregations and some HTML/CSS/JS. Main task was to predict better application release/update time slot, suggest the price range for different market segments.</p>
+                        </article>
+                    </section>
+                    <hr>
+                    <section id="education" aria-labelledby="education-label">
+                        <h2 id="education-label">Education</h2>
+                        <article id="unibz" aria-labelledby="unibz-label">
+                            <h3 id="unibz-label">PhD in Software Engineering (suspended)</h3>
+                            <header>
+                                <strong>Free University of Bolzano-Bozen, Italy</strong> <br>
+                                January 2012 - January 2013 * ~1 year (Bolzano-Bozen, Italy)<br>
+                            </header>
+                            <p>PhD Topic: Regression testing effectiveness in black-box environment</p>
+                        </article>
+                        <article id="unibz-case" aria-labelledby="unibz-case-label">
+                            <h3 id="unibz-case-label">Master in Computer Science (MSc)</h3>
+                            <header>
+                                Free University of Bolzano-Bozen, Italy<br>
+                                <strong>Center of Applied Software Engineering (CASE)</strong> <br>
+                                October 2007 - March 2011 * ~3 years (Bolzano-Bozen, Italy)
+                            </header>
+                            <p>MSc Thesis: Entropy-based test prioritization in black-box environment</p>
+                        </article>
+                        <article id="nsu" aria-labelledby="nsu-label">
+                            <h3 id="nsu-label">4 years BSc degree in Applied Mathematics</h3>
+                            <header>
+                                <strong>State University of Novosibirsk (NSU)</strong> <br>
+                                September 2002 - July 2006 * 4 years (Novosibirsk, Akademgorodok, Russia)<br>
+                            </header>
+                            <p>BSc Thesis: Semantic-based reinforcement learning algorithm.</p>
+                        </article>
+                    </section>
+                    <hr>
+                    <section id="languages" aria-labelledby="languages-label">
+                        <h3 id="languages-label">Languages</h3>
+                        <ul>
+                            <li><strong>Russian</strong>: Native speaker</li>
+                            <li><strong>English</strong>: Fluent speaking and writing (C1/2 university course)</li>
+                            <li><strong>Italian</strong>: Fluent speaking and writing (C1 CELI4 certificate)</li>
+                            <li><strong>German</strong>: Average communication proficiency (B1)</li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section id="other" aria-labelledby="other-label">
+                        <h3 id="other-label">Other skills and competences</h3>
+                        <ul>
+                            <li>Project management experience</li>
+                            <li>High adaptability, abroad living experience</li>
+                            <li>Easy learning, good communication skills</li>
+                            <li>Passion for sport: boxing, free-diving, rock climbing</li>
+                            <li>Balboa dancer and teacher (it's a swing dance)</li>
+                        </ul>
+                    </section>
+                </main>
+            </body>
+            </html>
+            
