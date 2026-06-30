@@ -178,6 +178,10 @@
             margin-right: 1rem;
         }
         
+        article[id="siemens"] {
+            --company-img: url(../img/siemens.png);
+        }
+
         article[id="brightcape"] {
             --company-img: url(../img/brightcape.png);
         }
@@ -247,6 +251,22 @@
         <hr/>
         <section aria-labelledby="experience-label">
             <h2 id="experience-label">Experience</h2>
+            <article aria-labelledby="siemens-label" id="siemens">
+                <h3 id="siemens-label">Data &amp; AI Engineer</h3>
+                    <header>
+                        <a href="https://www.siemens-energy.com/" target="_blank"><strong>Siemens Energy</strong></a><br/>
+                        March 2026 - Now (Bolzano, Italy, remote)<br/>
+                    </header>
+                    <p>
+                        On the <b>re-finflow</b> project I help to re-imagine financial data flows around a
+                        semantic approach to data modeling. We built a governed analytics layer in
+                        <b>dbt</b>, exposing trusted financial metrics through a <b>dbt semantic layer</b>,
+                        and orchestrated an agentic conversational assistant on top of it with
+                        <b>LangChain</b> and the <b>Azure Bot Framework</b>, deployed end-to-end on <b>Azure</b>.
+                        Developed a custom LangChain agent powered by a data ontology built on a dbt semantic layer,
+                        enabling natural-language access to governed financial metrics.
+                    </p>
+                </article>
                 <article aria-labelledby="tinkoff-label" id="tinkoff">
                     <h3 id="tinkoff-label">Lead Developer. Base Infrastructure / Platform.Analytics + Interface Reliability</h3>
                     <header>
@@ -256,7 +276,7 @@
                     <p>
                         Lead developer in the Interface Reliability and Analytics Platform and Base Infrastructure teams (SME). We build web analytics and infrastructure platforms in TBank for the whole SME,
                         including the FrameManager orchestrator for 100+ micro frontends that controls their loading and acts as the source of truth for business data, while also providing
-                        analytics tooling and monitoring web interface reliability.  
+                        analytics tooling and monitoring web interface reliability.
                     </p>
                     <p>Additionally, was responsible for the data and feature flags migration process during the Rosbank acquisition: Python, ELT pipelines with Data Build Tool (dbt).</p>
                 </article>
